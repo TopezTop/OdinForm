@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url("https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf")
+    format("opentype");
+}
+
+:root {
+  --background-clr-grey: #f9fafb;
+  background-image: url("myBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 100vh;
+}
+
+.logo-left {
+  margin-top: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 40%);
+  height: 170px;
+}
+
+.logo-image {
+  max-height: 150px;
+}
+.logo-text {
+  color: white;
+  font-family: "Norse Bold";
+  font-size: 120px;
+}
+
+.signup-container {
+  width: 60%;
+  height: 100% vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-clr-grey);
+  align-content: center;
+  padding: 20px;
+}
+
+#signup-form {
+  background-color: white;
+}
+
+#signup-top,
+#signup-bottom {
+  background-color: var(--background-clr-grey);
+}
+#signup-top,
+#signup-bottom,
+#signup-form {
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.signup-toptext {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.signup-bottomtext {
+  font-size: 16px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  grid-column-gap: 60px;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.submit-button {
+  background-color: #596d48;
+  color: white;
+  padding: 16px;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+}
